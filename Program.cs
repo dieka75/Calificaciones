@@ -27,14 +27,25 @@ namespace Calificaciones
             }
             promedio = sumaCalif / numAlumnos;
 
-            for (i = 0;i < numAlumnos; i++)
+            for (i = 0; i < numAlumnos; i++)
             {
                 if (califMin > calificaciones[i])
                 {
                     califMin = calificaciones[i];
                 }
             }
-            
+            for (i = 0; i < numAlumnos; i++)
+            {
+                if (calificaciones[i] > califMax)
+                {
+                    califMax = calificaciones[i];
+                }
+            }
+            Console.WriteLine("la calificacion promedio es: {0}", promedio);
+            Console.WriteLine("la calificacion minima es: {0}", califMin);
+            Console.WriteLine("la calificacion maxima es: {0}", califMax);
         }
     }
 }
+
+
