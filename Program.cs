@@ -10,6 +10,24 @@ namespace Calificaciones
     {
         static void Main(string[] args)
         {
+            byte i, numAlumnos;
+            double sumaCalif = 0, promedio, califMin = 10, califMax = 0;
+
+            Console.Write("Ingrese la cantidad de alumnos: ");
+            numAlumnos = Convert.ToByte(Console.ReadLine());
+
+            double[] calificaciones = new double[numAlumnos];
+
+            for (i = 0; i < numAlumnos; i++)
+            {
+                Console.Write("Ingrese la calificacion para el indice {0}: ", i);
+                calificaciones[i] = Convert.ToDouble(Console.ReadLine());
+
+                sumaCalif += calificaciones[i];
+            }
+            promedio = sumaCalif / numAlumnos;
+
+
         }
     }
 }
