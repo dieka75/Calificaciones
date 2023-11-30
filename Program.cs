@@ -27,7 +27,14 @@ namespace Calificaciones
             }
             promedio = sumaCalif / numAlumnos;
 
-
+            for (i = 0;i < numAlumnos; i++)
+            {
+                if (califMin > calificaciones[i])
+                {
+                    califMin = calificaciones[i];
+                }
+            }
+            Console.WriteLine(califMin);
         }
     }
 }
