@@ -34,7 +34,7 @@ namespace Calificaciones
                     califMin = calificaciones[i];
                 }
             }
-            Console.WriteLine(califMin);
+            
         }
     }
 }
