@@ -10,7 +10,7 @@ namespace Calificaciones
     {
         static void Main(string[] args)
         {
-            byte i, numAlumnos;
+            byte i, j, numAlumnos;
             double sumaCalif = 0, promedio, califMin = 10, califMax = 0;
 
             Console.Write("Ingrese la cantidad de alumnos: ");
